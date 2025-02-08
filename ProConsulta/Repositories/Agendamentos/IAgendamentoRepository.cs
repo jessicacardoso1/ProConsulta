@@ -8,6 +8,7 @@ namespace ProConsulta.Repositories.Agendamentos
         Task<Agendamento?> GetByIdAsync(int id);
         Task AddAsync(Agendamento agendamento);
         Task DeleteByIdAsync(int id);
+        Task<List<AgendamentosAnuais>?> GetReportAsync();
 
     }
 }
